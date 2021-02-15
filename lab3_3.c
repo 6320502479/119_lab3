@@ -7,6 +7,8 @@ int main()
     {
         while(k != 0)
     {
+        if(k==1)
+            printf("1\n");
         if(k!=0)
         {
             if(k%m==0)
