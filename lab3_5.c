@@ -1,13 +1,12 @@
 #include <stdio.h>
 int main()
 {
-    int k,m=2,i=0,mod[3],j;
+    int k,m=2,in;
     scanf("%d",&k);
-    j=k;
+    in=k;
+    int i=0,mod[3];
         while(k != 0)
     {
-        if(k==1)
-            printf("1\n");
         if(k!=0)
         {
             if(k%m==0)
@@ -23,7 +22,12 @@ int main()
         }
     }
     if(mod[0]!=mod[1] && mod[1]!=mod[2] && mod[0]!=mod[2])
-        printf("%d is a Lucky Number.",j);
+    {
+        printf("%d is a Lucky Number.",in);
+    }
     else
-        printf("%d is not a Lucky Number.",j);
+    {
+        printf("%d is not a Lucky Number.",in);
+    }
+
 }
